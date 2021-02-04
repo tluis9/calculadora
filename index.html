@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Projeto Calculadora - JavaScript</title>
+        <meta charset="utf-8">
+        
+    </head>
+
+    <body>
+
+        <script>
+            var primeiroValor = parseInt(prompt('Digite o primeiro valor: '));
+
+            do{
+                var operacao = prompt('Digite a operação matemática:');
+            } while(operacao!="+" && operacao!="-" && operacao!="/" && operacao!="*")
+
+            var segundoValor = parseInt(prompt('Digite o segundo valor: '));
+
+            var resultado = 0
+
+            switch(operacao){
+                case "+":
+                    resultado = primeiroValor+segundoValor;
+                    alert(resultado)
+                    break
+                case "-":
+                    resultado = primeiroValor-segundoValor;
+                    alert(resultado)
+                    break
+                case "/":
+                    resultado = primeiroValor/segundoValor;
+                    alert(resultado)
+                    break
+                case "*":
+                    resultado = primeiroValor*segundoValor;
+                    alert(resultado)
+                    break
+            }
+
+        </script>
+
+    </body>
+
+</html>
